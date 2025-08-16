@@ -464,10 +464,8 @@ if __name__ == '__main__':
     suite = unittest.TestSuite()
     test_loader = unittest.TestLoader()
     suite.addTest(test_loader.loadTestsFromTestCase(TestPS2))
-    #suite.addTest(unittest.makeSuite(TestPS2))
-    #suite.addTest()
     result = unittest.TextTestRunner(verbosity=2, resultclass=Results_600).run(suite)
-
+    
     output = result.getOutput()
     points = round(result.getPoints(),3)
     if points <=0:
