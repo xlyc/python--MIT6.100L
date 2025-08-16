@@ -14,6 +14,6 @@
 ## BUG修改
 - 修改ps2中test_ps2_student.py的第465，466行，解决因python版本而无法正常运行程序的bug，如下：
   ```
-    test_loader = unittest.TestLoader()
-    suite.addTest(test_loader.loadTestsFromTestCase(TestPS2))
+  test_loader = unittest.TestLoader()
+  suite.addTest(test_loader.loadTestsFromTestCase(TestPS2))
   ```
